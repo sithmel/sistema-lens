@@ -1,6 +1,6 @@
 {
   "name": "sistema-lens",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Introspection package for sistema",
   "main": "index.js",
   "scripts": {
