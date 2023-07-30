@@ -1,0 +1,76 @@
+.dlens-graph {
+  background-color: #ddd;
+}
+
+.dlens-graph__link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.dlens-graph__node {
+  fill: #97d2fc;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+.dlens-graph__node__resource {
+  fill: #35a5f4;
+}
+
+.dlens-graph__node:focus {
+  outline: none;
+  stroke-width: 2px;
+}
+
+.lens-help-show .dlens-graph__node.dependency{
+  fill: #bdecb6;
+}
+
+.dlens-graph__label {
+  font: 12px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+/* layout */
+.lens-graph svg {
+  width: 100%;
+  height: calc(100vh - 30px);
+}
+
+.lens-help {
+  opacity: 0;
+  transition: opacity 1000ms ease, transform 400ms ease;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: rgba(3, 3, 3, 0.5);
+  left: 0;
+  transform: translateY(calc(100% - 50px));
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.lens-help-show .lens-help{
+  opacity: 1;
+}
+
+.lens-help td{
+  padding: 3px;
+}
+
+.lens-help:hover {
+  transform: translateY(0);
+}
+
+.lens-header {
+  background: #666;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  padding: 6px;
+  font-family: sans-serif;
+}
